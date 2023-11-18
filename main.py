@@ -9,10 +9,12 @@ llm = Ollama(model="mistral-openorca",
             temperature=0.9,
              )
 
+pre_prompt = "You are a respected industry leader in writing and blogs with indepth knowledge of all factors including tone and storytelling, "
+brainstorm_template = str(pre_prompt) + "Please brainstorm and create 10 ideas for a blog post around the topic: {topic}?"
 
 prompt = PromptTemplate(
     input_variables=["topic"],
-    template="You are a respected industry leader in writing and blogs with indepth knowledge of all factors including tone and storytelling, Please brainstorm and create 10 ideas for a blog post around the topic: {topic}?",
+    template=brainstorm_template,
 )
 
 chain = LLMChain(llm=llm, 
