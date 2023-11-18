@@ -1,6 +1,6 @@
-# P5_script_generator
+# StellarSccripter
 
-StellarScripter is an open-source Python project that uses Langchain and Ollama to generate blog posts using a locally running Language Model (LLM).
+StellarScripter is an open-source Python project that uses Langchain and Ollama to generate blog posts using a locally running Language Model (LLM). It will initially generate a list of blog ideas for you, Once selected it will generate an introduction, body and conclusion to the blog. It is in a pre-release state at the moment.
 
 ## Table of Contents
 
